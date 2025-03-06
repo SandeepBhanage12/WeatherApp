@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color:white;
+}
+body{
+    background:url(image.jpg);
+    width:100%;
+    height: 100dvh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body:before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height: 100dvh;
+    background: rgb(0,0,0,0.15);
+    backdrop-filter: blur(15px);
+    color:white;
+}
+.main-container{
+    width:300px;
+    height: 450px;
+    z-index:1;
+    background:rgb(0,0,0,0.15),rgb(255,255,255,0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    border:solid;
+    padding:20px;
+    
+ 
+}
+
+.city{
+    width:100%;
+    padding:10px 5px;
+    border-radius: 99px;
+    border:3px solid transparent;
+    background: rgb(138, 141, 164);
+    outline: none;
+    font-weight: 200px;
+    font-size: 15px;
+    transition: 0.2s border ;
+    color:  rgb(21, 9, 9);
+}
+.city:focus{
+    color:3px solide black;
+}
+.city::placeholder{
+    color: rgb(70, 64, 70);
+    text-align: left;
+    
+}
+.search-btn{
+    position:absolute;
+    right: 30px;
+    border:none;
+    top:11.5%;
+    transform: translateY(-50%);
+    background: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.input-container{
+    margin-bottom:20px;
+    
+}
+.location-data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap:6px;
+     
+}
+
+img{
+   mix-blend-mode: multiply;
+    width: 70px;
+
+
+  }
+.weather-summary-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     max-width: 100px;
+     margin-left: 160px;
+     margin-top: -70px;
+
+
+
+}
+.condition-item{
+ 
+    margin-top: 20px;
+    max-width: 200px;
+}
+.condition-item1{
+    
+    margin-top: -68px;
+    margin-left: 180px;
+    max-width: 200px;
+}
+.forecast-items-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; 
+    margin-top: 10px;
+    padding: 10px; /* Adds some padding inside the container */
+
+    border-radius: 10px; /* Rounded corners */
+    overflow-x: auto; /* Horizontal scroll if needed */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+/* Styling for forecast items (assuming there are individual items inside) */
+.forecast-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for items */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.forecast-item:hover {
+    transform: translateY(-5px); /* Lifts the item on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Custom scrollbar for WebKit browsers (like Chrome, Safari) */
+.forecast-items-container::-webkit-scrollbar {
+    height: 8px;
+    background-color: #e0e0e0; /* Scrollbar background color */
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+
+    border-radius: 10px; 
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker scrollbar thumb on hover */
+}
+
+/* Adjustments for a more attractive overall scroll experience */
+.forecast-items-container {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #e0e0e0; /* For Firefox: thumb and track */
+}
+
+.forecast-items-container img{
+    width:50px;
+}
+.forecast-item{
+   width: 200px;
+   margin-left:5px;
+   gap:10px;
+   margin-top: 5px;
+   padding: 10px;
+   background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+   border: solid gray;
+   border-radius: 12px;
+   
+}
+.message-img{
+    width:150px;
+}

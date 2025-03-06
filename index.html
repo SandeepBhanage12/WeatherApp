@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+</head>
+<body>
+    <header class="header">
+        <h1>Weather App</h1>
+    </header>
+    <main class="main-container">
+        <!-- Add Weather App heading here -->
+        <header class="input-container">
+          <input class="city" type="text" placeholder="search city" >
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <style>
+            .weather-info{
+             display: none;
+            }
+        </style>
+
+        <section class="weather-info">
+            <div class="location-data-container">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4 class="contry-text">
+                        Karnataka
+                    </h4>
+                </div>
+                <h5 class="date">Wed, 07 Aug</h5>
+            </div>
+            <div class="weather-summary">
+                <div class="img-weather">
+                    <img src="weather.png" alt=" ">
+                </div>
+                <div class="weather-summary-info">
+                    <div class="temp-text"><h1>29 °C</h1></div>
+                    <div>clouds</div>
+                </div>
+            </div>
+            <div class="condition-item">
+                <i class="fa-solid fa-droplet"></i>
+                <h5>Humidity</h5>
+                <h5 class="humidity">55%</h5>
+            </div>
+            <div class="condition-item1">
+                <i class="fa-solid fa-wind"></i>
+                <h5 >Wind</h5>
+                <h5 class="wind" >2m/s</h5>
+            </div>
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-data regular-txt"> 05 Aug </h5>
+                    <img src="storm.png" alt="" class="forecast-img">
+                    <h5 class="forecast-tem">29 °C </h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-city-mesaage">
+            <img src="search.png" alt="" class="message-img">
+            <div>
+                <h1>Search city</h1>
+                <h4 class="regular-txt">
+                   Find out the weather condition of the city
+                </h4>
+            </div>
+        </section>
+
+        <style>
+            .not-found{
+             display: none;
+            }
+        </style>
+
+        <section class="not-found" >
+            <img src="404-error.png" alt="" class="message-img">
+            <div>
+                <h4 class="regular-txt">
+                    "Oops! We couldn't find the weather for this city. Please check the spelling and try again."
+                </h4>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
